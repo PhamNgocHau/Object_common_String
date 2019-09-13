@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str = "Toi yeu ngon ngu Javascript";
+    let count = 0;
+    for (let i = 0 ; i < str.length ; i++){
+        if(str[i] === "a"){
+            count++
+        }
+    }
+    document.write('So lan xuat hien chu a: ' + count + "<br>");
+
+    let res = str.split(" ");
+    document.write('Array: ' + res + '<br>');
+
+    let result = str.length;
+    document.write("length: " + result + '<br>');
+
+    let refesh = str.replace("Javascript","Typescript");
+    document.write('String new: ' + refesh);
+</script>
+</body>
+</html>
